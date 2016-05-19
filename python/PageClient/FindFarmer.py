@@ -1,4 +1,4 @@
-template=Import('../template.py')
+template=Import('/IENAC15/Beldjilali_Garcia_Raby_Ranaivoharison/template.py')
 
 def Farmer():
     FindFarmer='''

@@ -1,4 +1,4 @@
-bdd = Import('/IENAC15/AMAP/python/bddamap.py')
+bdd = Import('/IENAC15/Beldjilali_Garcia_Raby_Ranaivoharison/python/bddamap.py')
 template = Import('template.py')
 
 def  creercompte(role='', nom='', prenom='', email='', adresse='', mdp='', cmdp=''):

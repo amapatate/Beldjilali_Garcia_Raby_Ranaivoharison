@@ -1,4 +1,4 @@
-template=Import('/IENAC15/AMAP/python/template.py')
+template=Import('/IENAC15/Beldjilali_Garcia_Raby_Ranaivoharison/python/template.py')
 
 def Abo():
     Abo='''
