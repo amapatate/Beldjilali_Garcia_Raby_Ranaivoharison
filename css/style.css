@@ -1,0 +1,235 @@
+/* Permet de retirer toutes les marges et normes prédéfinies.
+On choisit la police d'écriture*/
+
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    font-family:"Helvetica", sans-serif;
+}
+
+/*
+***
+***
+GENERAL
+***
+***
+*/
+
+
+/**/
+.clearfix:before,
+.clearfix:after { content: ""; display: table;}
+.clearfix:after {clear: both;}
+.clearfix {zoom: 1; /* ie 6/7 */}
+
+body
+{
+  background: #fff;
+  font-weight: 300;
+  color: #777;
+  line-height: 1.65em;
+}
+
+#logo a {
+  width:40px;
+  height: 40px;
+  padding:none;
+  background-color: #44B78B;
+  margin-right: 40px;
+  border-radius: 5px;
+  display: block;
+  float: left;
+
+}
+
+#logo a:hover {
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {background-color: red;}
+    10% {background-color: yellow;}
+    20% {background-color: blue;}
+    30% {background-color: grey;}
+    40% {background-color: green;}
+    50% {background-color: purple;}
+    60% {background-color: brown;}
+    70% {background-color: pink;}
+    80% {background-color: black;}
+    90% {background-color: green;}
+    100% {background-color: white;}
+}
+
+
+.main ul li {
+  float: left;
+  list-style-type: none;
+  margin-right: 20px;
+  line-height: 40px;
+}
+
+nav {
+  padding: 30px 0px;
+}
+
+nav a {
+  color: #777;
+}
+
+nav a:hover {
+  color: #44B78B;
+  text-decoration: none;
+}
+
+.main .nav li:last-child, .login ul li:last-child{
+  margin-right: 0px;
+}
+
+
+.main .nav {
+  float: left;
+}
+
+.login ul {
+  float: right;
+}
+
+.login ul li {
+  float: left;
+  list-style-type: none;
+  margin-right: 20px;
+  line-height: 40px;
+}
+
+.login ul li:first-child a {
+   background-color: #44B78B;
+   padding: 12px;
+   border-radius: 3px;
+   color: #fff;
+   text-decoration: none;
+}
+
+.login ul li:first-child a:hover{
+  color: inherit;;
+}
+
+
+.hero h1 {
+  font-size: 3em;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  color: #44B78B;
+}
+
+.hero p {
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 100px;
+  color: inherit;
+}
+.hero {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px;
+}
+
+.present h2 {
+  font-size: 1.5em;
+  text-align: center;
+  color: inherit;
+  margin: 20px 0px;
+}
+.what{
+  float: left;
+}
+.what a {
+  color: inherit;
+}
+
+.what a:hover{
+  color:#44B78B;
+  text-decoration: none;
+}
+.site {
+  float: right;
+}
+.what img ,.site  p {
+  height: auto;
+  max-width: 100%;
+  border: solid;
+  border-radius: 5px;
+  border-color: #44B78B;
+}
+
+.info ul {
+  padding: 30px;
+  list-style-type: none;
+}
+
+.info a {
+color: #777;
+padding: 0;
+}
+
+.info a:hover{
+  text-decoration: none;
+}
+
+.info ul li:last-child{
+  float: right;
+  text-align: right;
+}
+
+h3{
+  margin:30px;
+  text-align: center;
+}
+
+/*
+***
+***
+New Acount
+***
+***
+*/
+
+.form h2{
+  font-size: 2em;
+  text-align: center;
+  color: inherit;
+  margin: 20px 0px;
+}
+
+.form label{
+  float: left;
+  text-align: right;
+  margin: 10px 0px;
+}
+
+.form input, .form select{
+  margin: 10px 0px;
+}
+
+.form div:last-child{
+	text-align: center;
+}
