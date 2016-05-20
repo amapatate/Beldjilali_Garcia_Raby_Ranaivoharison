@@ -1,10 +1,10 @@
-template= Import('/IENAC15/Beldjilali_Garcia_Raby_Ranaivoharison/python/template.py')
+template= Import('/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/template.py')
 
 def formulaire():
     formulaire='''
 <div class="container form">
     <h2 class="col-md-12">Formulaire</h2>
-    <form id="form1" name="inscription " method="post" action="../pythonamap.py/creercompte" enctype="multipart/form-data">
+    <form id="form1" name="inscription " method="post" action="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/pythonamap.py/creercompte" enctype="multipart/form-data">
        <div class="col-md-12">
         <label class="col-md-6"> Type de compte:</label>
         <section class="col-md-6">

@@ -5,15 +5,15 @@ def head():
 <head>
   <title>AMAP'ATATE</title>
   <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="/IENAC15/Beldjilali_Garcia_Raby_Ranaivoharison/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/IENAC15/Beldjilali_Garcia_Raby_Ranaivoharison/css/bootstrap-grid.css" />
+    <link rel="stylesheet" type="text/css" href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/css/bootstrap-grid.css" />
 </head>
 <body>'''
     return head
 def nav():
     nav='''
   <nav class="header container main ">
-      <div id="logo" class="col-md-1"><a href="/IENAC15/Beldjilali_Garcia_Raby_Ranaivoharison/index.py/index"></a></div>
+      <div id="logo" class="col-md-1"><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/index.py/index"></a></div>
       <ul class="col-md-5">
         <li><a href="./PageClient.html">Fruits</a></li>
         <li><a href="#">Legumes</a></li>
@@ -22,8 +22,8 @@ def nav():
       </ul>
       <div class= "login col-md-6">
         <ul>
-          <li><a href="/IENAC15/Beldjilali_Garcia_Raby_Ranaivoharison/python/NewAcount.py/NewAcount">Créer un compte</a></li>
-          <li><a href="/IENAC15/Beldjilali_Garcia_Raby_Ranaivoharison/python/PageClient/IndexClient.py/IndexClient">Se connecter</a></li>
+          <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/NewAcount.py/NewAcount">Créer un compte</a></li>
+          <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/PageClient/IndexClient.py/IndexClient">Se connecter</a></li>
         </ul>
       </div>
   </nav>'''
@@ -31,16 +31,16 @@ def nav():
 def navClient():
     nav='''
     <nav class="header container main ">
-      <div id="logo" class="col-md-1"><a href="/IENAC15/Beldjilali_Garcia_Raby_Ranaivoharison/python/PageClient/IndexClient.py/IndexClient"></a></div>
+      <div id="logo" class="col-md-1"><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/PageClient/IndexClient.py/IndexClient"></a></div>
       <ul class="col-md-5">
-        <li><a href="/IENAC15/Beldjilali_Garcia_Raby_Ranaivoharison/python/PageClient/MySubs.py/MySubs">Mes Abonnements</a></li>
-        <li><a href="/IENAC15/Beldjilali_Garcia_Raby_Ranaivoharison/python/PageClient/Messages.py/Messages">Messages</a></li>
-        <li><a href="/IENAC15/Beldjilali_Garcia_Raby_Ranaivoharison/python/PageClient/FindFarmer.py/FindFarmer">Trouver un Agriculteur</a></li>
+        <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/PageClient/MySubs.py/MySubs">Mes Abonnements</a></li>
+        <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/PageClient/Messages.py/Messages">Messages</a></li>
+        <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/PageClient/FindFarmer.py/FindFarmer">Trouver un Agriculteur</a></li>
       </ul>
       <div class= "login col-md-6">
         <ul>
-          <li><a href="/IENAC15/Beldjilali_Garcia_Raby_Ranaivoharison/python/PageClient/MyAcount.py/MyAcount">"NomClient"</a></li>
-          <li><a href="/IENAC15/Beldjilali_Garcia_Raby_Ranaivoharison/index.py/index">Se Déconnecter</a></li>
+          <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/PageClient/MyAcount.py/MyAcount">"NomClient"</a></li>
+          <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/index.py/index">Se Déconnecter</a></li>
         </ul>
       </div>
   </nav>'''

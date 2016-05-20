@@ -1,4 +1,4 @@
-template=Import('/IENAC15/Beldjilali_Garcia_Raby_Ranaivoharison/template.py')
+template=Import('/IENAC15/beldjilali_garcia_raby_ranaivoharison/template.py')
 
 def Farmer():
     FindFarmer='''

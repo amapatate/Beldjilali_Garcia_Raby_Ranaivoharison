@@ -1,4 +1,4 @@
-template= Import('/IENAC15/Beldjilali_Garcia_Raby_Ranaivoharison/python/template.py')
+template= Import('/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/template.py')
 
 def presentation():
     presentation='''
@@ -9,7 +9,7 @@ def presentation():
   	 <div class=" col-md-6 col-xs-12">
         <a href="#"><h3>Qu'est-ce qu'une AMAP ?</h3></a>
       	<a href="#">
-            <img src="/IENAC15/Beldjilali_Garcia_Raby_Ranaivoharison/images/patate.jpg" alt="PATATE" titre="qu'est ce qu'une amap"/>
+            <img src="/IENAC15/beldjilali_garcia_raby_ranaivoharison/images/patate.jpg" alt="PATATE" titre="qu'est ce qu'une amap"/>
         </a>
      </div>
      <div class="site col-md-6 col-xs-12" >
