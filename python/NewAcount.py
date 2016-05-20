@@ -4,14 +4,15 @@ def formulaire():
     formulaire='''
 <div class="container form">
     <h2 class="col-md-12">Formulaire</h2>
-    <form id="form1" name="inscription " method="post" action="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/pythonamap.py/creercompte" enctype="multipart/form-data">
+    <form id="form1" name="inscription " method="post" action="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/pythonamap.py/creerCompte" enctype="multipart/form-data">
        <div class="col-md-12">
         <label class="col-md-6"> Type de compte:</label>
         <section class="col-md-6">
-          <select name="role">
-            <optgroup label= "Acteur">
-                <option value="1">Agriculteur</option>
-                <option value="2">Client</option>
+          <select name="civilite">
+            <optgroup label= "Civilité">
+                <option value="Madame">Madame</option>
+                <option value="Mademoiselle">Mademoiselle</option>
+                <option value="Monsieur">Monsieur</option>
             </optgroup>
           </select>
         </section>

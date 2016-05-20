@@ -72,7 +72,7 @@ def footer():
         <li class="col-md-6 col-xs-6"> <a href="http://www.enac.fr/" target="_blank">Site de l'ENAC </a></li>
         <li class="col-md-6 col-xs-6"> <a href="#">Les développeurs </a> </li>
       </ul>
-      <h3 class="col-md-12 col-xs-12">&copy All right reserved ENAC</h3>
+      <h3 class="col-md-12 col-xs-12">&copy All potatoes reserved to ENAC</h3>
     </div>
   </footer>
 </body>

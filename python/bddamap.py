@@ -1,10 +1,10 @@
 import mysql.connector
 
 config = {
-  'user': 'root',
-  'password': 'mysql',
+  'user': 'admin',
+  'password': 'admin',
   'host': 'localhost',
-  'database': 'bdd_amapatate',
+  'database': 'IENAC15_beldjilali_garcia_raby_ranaivoharison',
   'raise_on_warnings': True
     }
 
@@ -24,10 +24,10 @@ def close_BD(cursor,cnx):
     cnx.close()
 
 #insertion dans la table commentaires
-def insertAccount(nom='', prenom='', email='', adresse='', mdp=''):
+def insertAccount(civilite='', nom='', prenom='', email='', adresse='', mdp=''):
     cnx=connect_BD()
-    query = ("INSERT INTO `bdd_amapatate`.`Compte` (mail, nom, prénom, adresse, mdp) VALUES (%s, %s, %s, %s, %s);")
-    param=(email, mdp, nom, prenom, adresse)
+    query = ("INSERT INTO `IENAC15_beldjilali_garcia_raby_ranaivoharison`.`client` (civilite, nom, prenom, email, adresse, mdp) VALUES (%s, %s, %s, %s, %s, %s);")
+    param=(civilite, nom, prenom, email, adresse, mdp)
     try:
         cursor = cnx.cursor()
         cursor.execute(query, param)
@@ -37,10 +37,10 @@ def insertAccount(nom='', prenom='', email='', adresse='', mdp=''):
     close_BD(cursor,cnx)
 
 #Affichage de la table commentaires
-def affichComment():
+def afficheComment():
     cnx=connect_BD()
     cursor = cnx.cursor()
-    query = ("SELECT id, nom, comment, email FROM `bd_ienac_gr11`.`Commentaires` ")
+    query = ("SELECT id, nom, comment, email FROM `IENAC15_beldjilali_garcia_raby_ranaivoharison`.`Commentaires` ")
     cursor.execute(query)
     liste=list(cursor)
     close_BD(cursor,cnx)
