@@ -40,6 +40,15 @@ GENERAL
 .clearfix:after {clear: both;}
 .clearfix {zoom: 1; /* ie 6/7 */}
 
+.banniere
+{
+margin:0 px;
+border-width: 0 px;
+padding:0 px;
+width:100%;
+background-color: grey;
+}
+
 body
 {
   background: #fff;
@@ -217,7 +226,7 @@ New Acount
   font-size: 2em;
   text-align: center;
   color: inherit;
-  margin: 20px 0px;
+  margin: 20px 0px
 }
 
 .form label{
@@ -233,3 +242,18 @@ New Acount
 .form div:last-child{
 	text-align: center;
 }
+
+
+
+.banniere {
+        padding:0px;
+        border:0px;
+        margin:0px;;
+        width:100%;
+         background:url(/IENAC15/beldjilali_garcia_raby_ranaivoharison/images/banniere.jpg) no-repeat;
+}
+
+}
+.banniere img {
+   width:100%;
+   height:25%;

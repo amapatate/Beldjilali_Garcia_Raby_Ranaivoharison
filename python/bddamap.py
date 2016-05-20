@@ -45,3 +45,12 @@ def afficheComment():
     liste=list(cursor)
     close_BD(cursor,cnx)
     return liste
+
+def selectProduit():
+    cnx=connect_BD()
+    cursor = cnx.cursor()
+    query=("SELECT id,nom,type,variete,description,prix_kg,photo FROM produit")
+    cursor.execute(query) # envoi de la requete
+    rows=cursor.fetchall() # réception des données sous forme de liste
+    close_BD(cursor,cnx)
+    return rows

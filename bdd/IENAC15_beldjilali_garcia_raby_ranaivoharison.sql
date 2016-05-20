@@ -39,9 +39,10 @@ CREATE TABLE `agriculteur` (
 
 CREATE TABLE `produit` (
   `id` int AUTO_INCREMENT,
-  `nom` varchar(256),
-  `description` text,
+  `nom` varchar(50),
+  `type` varchar(12),
   `variete` varchar(256),
+  `description` text,
   `prix_kg` DECIMAL(10,2),
   `photo` mediumblob,
   PRIMARY KEY (id)
@@ -84,14 +85,21 @@ CREATE TABLE `detail_panier_type` (
 
 -- --------------------------------------------------------
 
-INSERT INTO produit (nom) VALUES 
-('pomme de terre'),('chou'),('navet'), ('oignon');
+INSERT INTO produit (nom,type) VALUES 
+('pomme de terre','legume'),('chou','legume'),('navet','legume'), ('oignon','legume'),
+('pomme','fruit'), ('poire','fruit'), ('fraise','fruit'),
+('riz','feculent'), ('blé','feculent'), ('haricot sec','feculent');
 
 INSERT INTO client (telephone, nom, prenom,email,mdp) VALUES 
 ('01231456789','Nerve','Germaine','nerve@free.fr','patate');
 
-INSERT INTO agriculteur (telephone,nom, prenom,email,mdp,presentation) VALUES 
-('01231450000','Ate','Patrick','pat@free.fr','patate','agriculteur spécialisé dans la Pat Ate');
+INSERT INTO agriculteur (nom, prenom,telephone, email,mdp,presentation) VALUES
+('Ate','Patrick','01231450000', 'pat@free.fr','patate','agriculteur spécialisé dans la Pat Ate');
+
+INSERT INTO agriculteur (nom, prenom,telephone, email,mdp,presentation) VALUES
+('admin','admin','0123456789', 'admin','admin','compte administrateur du site');
+
+
 
 
 

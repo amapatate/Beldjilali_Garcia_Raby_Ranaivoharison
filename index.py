@@ -4,7 +4,7 @@ def presentation():
     presentation='''
 <div class="container">
 <section class="present row">
-  <h2>Présentation Générale</h2>
+  <h2>Bienvenue sur le site de l'Amap'atate</h2>
   <article  class="what col-md-12" >
   	 <div class=" col-md-6 col-xs-12">
         <a href="#"><h3>Qu'est-ce qu'une AMAP ?</h3></a>
@@ -23,8 +23,8 @@ def presentation():
 
 def index():
     result= template.head()
-    result+= template.nav()
     result+= template.header()
+    result+= template.nav()
     result+= presentation()
     result+= template.footer()
     return result

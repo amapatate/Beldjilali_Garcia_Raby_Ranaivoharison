@@ -1,6 +1,7 @@
 bdd = Import('/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/bddamap.py')
 template = Import('/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/template.py')
 
+
 def  creerCompte(civilite='', nom='', prenom='', email='', adresse='', mdp='', cmdp=''):
     result = template.head()
     result += template.nav()
@@ -30,8 +31,15 @@ def  saisirPanierType(select='', name='', surname='', email='', adresse=''):
     result = template.head()
     result += template.nav()
     result += template.header()
-    result+=afficheCompte(name, surname, email, adresse)
+    result+=afficherCompte(name, surname, email, adresse)
     result += template.footer()
     bdd.insertClient(name, surname, email, adresse)
     #Session()["mail"]=email
     return result
+
+
+
+
+
+
+        

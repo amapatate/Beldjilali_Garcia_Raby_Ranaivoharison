@@ -1,20 +1,29 @@
 def head():
-    head='''
+    head = '''
 <html xml:lang="fr">
 
 <head>
   <title>AMAP'ATATE</title>
   <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/css/bootstrap-grid.css" />
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-grid.js"></script>
+
 </head>
 <body>'''
     return head
+
+
 def nav():
-    nav='''
-  <nav class="header container main ">
+    nav = '''
+  <nav class="header container main">
+
       <div id="logo" class="col-md-1"><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/index.py/index"></a></div>
       <ul class="col-md-5">
+       <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/index.py/index">Accueil</a></div>
+        <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Produits</a></li>
         <li><a href="./PageClient.html">Fruits</a></li>
         <li><a href="#">Legumes</a></li>
         <li><a href="#">Viandes</a></li>
@@ -28,8 +37,10 @@ def nav():
       </div>
   </nav>'''
     return nav
+
+
 def navClient():
-    nav='''
+    nav = '''
     <nav class="header container main ">
       <div id="logo" class="col-md-1"><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/PageClient/IndexClient.py/IndexClient"></a></div>
       <ul class="col-md-5">
@@ -46,17 +57,22 @@ def navClient():
   </nav>'''
     return nav
 
+
 def header():
-    header='''
-  <header class="container">
-    <section class="hero row">
-      <h1>Bienvenue à l'Amap'atate</h1>
-      <p></p>
-    </section>
+    header = '''
+  <header class="row">
+  <div class="container>
+     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <img   width="100%" src="/IENAC15/beldjilali_garcia_raby_ranaivoharison/images/banniere.jpg" alt="banniere" title="AMAP'ATATE" />
+    </div>
+ </div>
   </header>'''
     return header
+
+
+
 def headerClient():
-    header='''
+    header = '''
     <header class="container">
     <section class="hero row">
       <h1>Bonjour "nomClient"</h1>
@@ -64,15 +80,16 @@ def headerClient():
     </section>
   </header>'''
     return header
+
+
 def footer():
-    footer='''
+    footer = '''
   <footer class="clearfix container">
-    <div class="info">
+    <div class="info row">
       <ul>
-        <li class="col-md-6 col-xs-6"> <a href="http://www.enac.fr/" target="_blank">Site de l'ENAC </a></li>
-        <li class="col-md-6 col-xs-6"> <a href="#">Les développeurs </a> </li>
+        <li class="col-md-3" > <a href="http://www.enac.fr/" target="_blank">Site de l'ENAC </a></li>
+        <li class="col-md-3" > <a href="#">Les développeurs </a> </li>
       </ul>
-      <h3 class="col-md-12 col-xs-12">&copy All potatoes reserved to ENAC</h3>
     </div>
   </footer>
 </body>

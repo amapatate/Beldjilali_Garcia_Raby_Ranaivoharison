@@ -62,8 +62,8 @@ def formulaire():
 
 def NewAcount():
     result= template.head()
-    result+= template.nav()
     result+= template.header()
+    result+= template.nav()
     result+= formulaire()
     result+= template.footer()
     return result
