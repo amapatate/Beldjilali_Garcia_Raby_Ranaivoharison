@@ -24,10 +24,10 @@ def close_BD(cursor,cnx):
     cnx.close()
 
 #insertion dans la table commentaires
-def insertAccount(civilite='', nom='', prenom='', email='', adresse='', mdp=''):
+def insertAccount(civilite='', nom='', prenom='', telephone='',email='', adresse='', mdp=''):
     cnx=connect_BD()
-    query = ("INSERT INTO `IENAC15_beldjilali_garcia_raby_ranaivoharison`.`client` (civilite, nom, prenom, email, adresse, mdp) VALUES (%s, %s, %s, %s, %s, %s);")
-    param=(civilite, nom, prenom, email, adresse, mdp)
+    query = ("INSERT INTO `IENAC15_beldjilali_garcia_raby_ranaivoharison`.`client` (civilite, nom, prenom, telephone, email, adresse, mdp) VALUES (%s, %s, %s, %s, %s, %s, %s);")
+    param=(civilite, nom, prenom, telephone, email, adresse, mdp)
     try:
         cursor = cnx.cursor()
         cursor.execute(query, param)

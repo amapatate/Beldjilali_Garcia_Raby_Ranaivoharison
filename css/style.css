@@ -229,6 +229,10 @@ New Acount
   margin: 20px 0px
 }
 
+h2#amap{
+      color: #44B78B;
+}
+
 .form label{
   float: left;
   text-align: right;
@@ -245,15 +249,3 @@ New Acount
 
 
 
-.banniere {
-        padding:0px;
-        border:0px;
-        margin:0px;;
-        width:100%;
-         background:url(/IENAC15/beldjilali_garcia_raby_ranaivoharison/images/banniere.jpg) no-repeat;
-}
-
-}
-.banniere img {
-   width:100%;
-   height:25%;

@@ -30,7 +30,7 @@ CREATE TABLE `agriculteur` (
   `presentation` text,
   `lieu_recup_panier` text,
   `rib_agriculteur` varchar(24),
-  `type_paiement` varchar(20),
+  `modalite_paiement` TEXT,
    PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -66,6 +66,8 @@ CREATE TABLE `panier_type` (
   `id` int(11) AUTO_INCREMENT,
   `id_agriculteur` int(11),
   `date_validite` date,
+   `photo` mediumblob,
+   `prix_abo_mensuel` DECIMAL(10,2),
   FOREIGN KEY (id_agriculteur) REFERENCES agriculteur(id), 
   PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
