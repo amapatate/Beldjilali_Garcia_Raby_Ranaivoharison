@@ -12,11 +12,12 @@ def head():
     <link rel="stylesheet" type="text/css" href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/css/bootstrap.min.css" />
     <script type="text/javascript" src="/IENAC15/beldjilali_garcia_raby_ranaivoharison/js/jquery-2.2.0.min.js"></script>
     <script type="text/javascript" src="/IENAC15/beldjilali_garcia_raby_ranaivoharison/js/menu.js"></script>
-
+     <script type="text/javascript" src="/IENAC15/beldjilali_garcia_raby_ranaivoharison/js/event.js"></script>
 
 </head>
 <body>'''
     return head
+
 
 
 def header():
@@ -75,8 +76,8 @@ def navAdmin():
                     <li><a href="#">recherche</a></li></ul>
         </li>
         <li><a href="#">membres</a>
-            <ul><li><a href="#">connexion</a></li>
-                <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/NewAcount.py/NewAcount">inscription</a></li>
+            <ul><li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/connexion.py/connexion">connexion</a></li>
+                <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/newAccount.py/newAccount">inscription</a></li>
             </ul>
         </li>
 
@@ -106,8 +107,8 @@ def nav():
         <li><a href="#">Agriculteurs</a>
         <ul><li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Consulter</a></li></ul></li>
 
-        <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/NewAcount.py/NewAcount">Inscription</a></li>
-        <li><a href="#">Connexion</a></li>
+        <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/newAccount.py/newAccount">Inscription</a></li>
+        <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/connexion.py/connexion">Connexion</a></li>
 
         <li><a href="#">plus</a>
                 <ul><li><a href="#">forum</a></li>

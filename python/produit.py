@@ -15,14 +15,16 @@ def listeProduit():
     tab_produit = bdd.selectProduit()
     # affichage du tableau
     liste = '''
-    <section class="row">
+    <div class="container">
 
-        <div class="container">
-    <caption>
-        <h3>Nos produits</h3>
-    </caption>
-    <section class="table-responsive">
-        <table class="table table-bordered table-striped table-condensed">
+        <div class="row">
+            <caption>
+                <h3>Nos produits</h3>
+            </caption>
+        </div>
+
+    <div class="row">
+    <table class="table table-responsive table-bordered table-striped table-condensed">
          <thead>
          <th>Id</th>
          <th>Nom</th>
@@ -48,8 +50,8 @@ def listeProduit():
     liste += '''
     </tbody>
     </table>
-    </section>
-    </section>
+
+
      </div>
 
 

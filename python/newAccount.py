@@ -1,7 +1,7 @@
 template = Import('/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/template.py')
 
 
-def NewAcount():
+def newAccount():
     result = template.head()
     result += template.header()
     result += template.nav()

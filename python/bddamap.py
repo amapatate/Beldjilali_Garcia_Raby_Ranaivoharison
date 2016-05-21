@@ -59,3 +59,43 @@ def selectProduit():
     rows = cursor.fetchall()  # réception des données sous forme de liste
     close_BD(cursor, cnx)
     return rows
+
+
+
+'''
+# dans login.py
+def selectLogin(email,mdp):
+    cnx = connect_BD()
+    cursor = cnx.cursor()
+    query = ("SELECT id,nom,prenom,telephone,email FROM client")
+    param=(email,mdp)
+    cursor.execute(query,param)  # envoi de la requete
+    response = cursor.fetchone()
+    if(response is None):
+        return 0 # 0 si auth pas bonne
+    else:
+        for (id,nom,prenom) in cursor:
+            Session()["nom"]=nom
+            Session()["prenom"]=prenom
+            Session()["id"]=id
+        close_BD(cursor, cnx)
+    return 1 # 1 si correcte
+
+
+
+# dans prive.py
+def index():
+    if "id" in Session() and Session()["id"] !='':
+        msg+="<br /><a href='../../python/prive.py.deconnect'>Se déconnecter</a>"
+    else:
+        raise HTTP_REDIRECTION('../../index.html')
+    return msg
+
+def deconnect():
+    if "id" in Session() and Session()["id"] !='':# si la session existe on la supprime
+        del Session()["nom"]
+        del Session()["prenom"]=prenom
+        del Session()["id"]=id
+    raise HTTP_REDIRECTION('../../index.html')
+    return
+'''
