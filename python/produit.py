@@ -2,21 +2,19 @@ bdd = Import('/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/bddamap.py')
 template = Import('/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/template.py')
 
 
-
-
 def index():
-    result= template.head()
-    result+= template.header()
-    result+= template.nav()
-    result+= listeProduit()
-    result+= template.footer()
+    result = template.head()
+    result += template.header()
+    result += template.nav()
+    result += listeProduit()
+    result += template.footer()
     return result
 
 
 def listeProduit():
     tab_produit = bdd.selectProduit()
     # affichage du tableau
-    liste='''
+    liste = '''
     <section class="row">
 
         <div class="container">
@@ -37,17 +35,17 @@ def listeProduit():
         <tbody>
     '''
     for row in tab_produit:
-        liste+='<tr>'
-        liste+='<td>'+str(row[0])+'</td>'
-        liste+='<td>'+str(row[1])+'</td>'
-        liste+='<td>'+str(row[2])+'</td>'
-        liste+='<td>'+str(row[3])+'</td>'
-        liste+='<td>'+str(row[4])+'</td>'
-        liste+='<td>'+str(row[5])+'</td>'
-        liste+='<td>'+str(row[6])+'</td>'
-        liste+='</tr>'
+        liste += '<tr>'
+        liste += '<td>' + str(row[0]) + '</td>'
+        liste += '<td>' + str(row[1]) + '</td>'
+        liste += '<td>' + str(row[2]) + '</td>'
+        liste += '<td>' + str(row[3]) + '</td>'
+        liste += '<td>' + str(row[4]) + '</td>'
+        liste += '<td>' + str(row[5]) + '</td>'
+        liste += '<td>' + str(row[6]) + '</td>'
+        liste += '</tr>'
 
-    liste+='''
+    liste += '''
     </tbody>
     </table>
     </section>
@@ -58,4 +56,3 @@ def listeProduit():
 
     '''
     return liste
-

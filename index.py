@@ -1,20 +1,17 @@
-template= Import('/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/template.py')
-
+template = Import('/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/template.py')
 
 
 def index():
-    result=template.head()
-    result+= template.header()
-    result+= template.navAdmin()
-    result+= presentation()
-    result+= template.footer()
+    result = template.head()
+    result += template.header()
+    result += template.nav()
+    result += presentation()
+    result += template.footer()
     return result
 
 
-
-
 def presentation():
-    presentation='''
+    presentation = '''
 <div class="container">
 
 <div class="present row">

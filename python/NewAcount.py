@@ -1,19 +1,17 @@
-template= Import('/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/template.py')
-
+template = Import('/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/template.py')
 
 
 def NewAcount():
-    result= template.head()
-    result+= template.header()
-    result+= template.navAdmin()
-    result+= formulaire()
-    result+= template.footer()
+    result = template.head()
+    result += template.header()
+    result += template.nav()
+    result += formulaire()
+    result += template.footer()
     return result
 
 
-
 def formulaire():
-    formulaire='''
+    formulaire = '''
 <div class="container form">
     <h2 class="col-md-12">Inscription</h2>
     <form id="form1" name="inscription " method="post" action="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/pythonamap.py/creerCompte???" enctype="multipart/form-data">
@@ -76,4 +74,3 @@ def formulaire():
       </div>
   </div>'''
     return formulaire
-

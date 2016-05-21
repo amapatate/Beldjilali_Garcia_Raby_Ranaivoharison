@@ -30,6 +30,7 @@ def header():
 
 
 def navAdmin():
+    # menu pour administrateur agriculteur
     nav = '''
  <nav class="header container main">
  <div class="row">
@@ -51,7 +52,7 @@ def navAdmin():
             <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Supprimer</a></li></ul>
         </li>
 
-        <li><a href="#">Abriculteurs</a>
+        <li><a href="#">Agriculteurs</a>
         <ul><li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Consulter</a></li>
             <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Ajouter</a></li>
             <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Modifier</a></li>
@@ -69,7 +70,6 @@ def navAdmin():
                 <ul><li><a href="#">forum</a></li>
                     <li><a href="#">liens</a></li>
                     <li><a href="#">nous contacter</a></li>
-                    <li><a href="#">team</a></li>
                     <li><a href="#">recherche</a></li></ul>
         </li>
         <li><a href="#">membres</a>
@@ -82,14 +82,12 @@ def navAdmin():
 </div>
 </nav>
 <br /><br /> <br /><br /><br /><br />
-
-
   '''
     return nav
 
-def nav():
 
-    # navigation pour simple visiteur mais client potentiel
+def nav():
+    # menu pour simple visiteur mais client potentiel
     nav = '''
  <nav class="header container main">
  <div class="row">
@@ -103,10 +101,8 @@ def nav():
         <li><a href="#">Panier-Type</a>
         <ul><li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Consulter</a></li></ul></li>
 
-        <li><a href="#">Abriculteurs</a>
+        <li><a href="#">Agriculteurs</a>
         <ul><li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Consulter</a></li></ul></li>
-
-
 
         <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/NewAcount.py/NewAcount">Inscription</a></li>
         <li><a href="#">Connexion</a></li>
@@ -123,14 +119,12 @@ def nav():
 </nav>
 <br /><br /> <br /><br /><br /><br />
 
-
   '''
     return nav
 
 
-
-
 def navClient():
+    # menu pour membre client authentifié
     nav = '''
     <nav class="header container main ">
       <div id="logo" class="col-md-1"><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/PageClient/IndexClient.py/IndexClient"></a></div>
@@ -147,8 +141,6 @@ def navClient():
       </div>
   </nav>'''
     return nav
-
-
 
 
 def headerClient():
