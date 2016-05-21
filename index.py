@@ -27,14 +27,14 @@ def presentation():
   <h2 id="amap">Bienvenue sur le site de l'Amap'atate</h2>
   <article  class="what col-md-12" >
   	 <div class=" col-md-6 col-xs-12">
-        <a href="#"><h3>Qu'est-ce qu'une AMAP ?</h3></a>
+        <a href="#"><h3>Comment ça marche ?</h3></a>
         <iframe width="560" height="360" src="https://www.youtube.com/embed/Pa3hXIRveYI" frameborder="0" allowfullscreen></iframe>
       	<!--<a href="#">
             <img src="/IENAC15/beldjilali_garcia_raby_ranaivoharison/images/patate.jpg" alt="PATATE" titre="qu'est ce qu'une amap"/>
         </a>-->
      </div>
      <div class="site col-md-6 col-xs-12" >
-      		<h3>Présentation du site</h3>
+      		<h3>Qu'est-ce qu'une AMAP ?</h3>
       		<!--<p></p>-->
             <iframe width="560" height="360" src="https://www.youtube.com/embed/GnOzhIlXtsc" frameborder="0" allowfullscreen></iframe>
     </div>

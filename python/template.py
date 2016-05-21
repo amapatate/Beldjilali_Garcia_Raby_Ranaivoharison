@@ -14,23 +14,6 @@ def head():
     <script type="text/javascript" src="/IENAC15/beldjilali_garcia_raby_ranaivoharison/js/menu.js"></script>
 
 
-
-     <!-- player skin -->
-   <link rel="stylesheet" href="skin/functional.css">
-
-   <!-- site specific styling -->
-   <style>
-   body { font: 12px "Myriad Pro", "Lucida Grande", sans-serif; text-align: center; padding-top: 5%; }
-   .flowplayer { width: 80%; }
-   </style>
-
-   <!-- for video tag based installs flowplayer depends on jQuery 1.7.2+ -->
-   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-
-   <!-- include flowplayer -->
-   <script src="flowplayer.min.js"></script>
-
-
 </head>
 <body>'''
     return head
