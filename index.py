@@ -1,5 +1,18 @@
 template= Import('/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/template.py')
 
+
+
+def index():
+    result=template.head()
+    result+= template.header()
+    result+= template.navAdmin()
+    result+= presentation()
+    result+= template.footer()
+    return result
+
+
+
+
 def presentation():
     presentation='''
 <div class="container">
@@ -7,7 +20,7 @@ def presentation():
 <div class="present row">
     <div class="class="col-lg-offset-8 col-lg-10">
         <h2><a href="#">
-        <img  id="logo" width="15%" src="/IENAC15/beldjilali_garcia_raby_ranaivoharison/images/logo.png" alt="logo" title="AMAP'ATATE" />
+        <img  id="logo" width="20%" src="/IENAC15/beldjilali_garcia_raby_ranaivoharison/images/logo.png" alt="logo" title="AMAP'ATATE" />
         </a>
         </h2>
     </div>
@@ -134,11 +147,3 @@ est matérialisé par le&nbsp;<em>contrat d’engagement Amap</em>.</p>
 
 '''
     return presentation
-
-def index():
-    result=template.head()
-    result+= template.header()
-    result+= template.nav()
-    result+= presentation()
-    result+= template.footer()
-    return result

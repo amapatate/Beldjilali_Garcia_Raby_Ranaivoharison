@@ -149,3 +149,6 @@ html>body #menu li ul ul
 
 }
 
+
+/* pour tenter de régler pb de sous menus qui disparaissent avant de pouvoir être cliqués */
+/*nav>ul>li>a {pointer-events:none;}*/

@@ -29,88 +29,51 @@ def header():
     return header
 
 
-def nav():
+def navAdmin():
     nav = '''
  <nav class="header container main">
  <div class="row">
   <ul id="menu" class="col-md-12 col-lg-12 ">
-        <li>
-                <a  href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/index.py/index">accueil</a>
+
+        <li><a  href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/index.py/index">accueil</a></li>
+
+        <li><a href="#">Produits</a>
+        <ul><li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Consulter</a></li>
+            <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Ajouter</a></li>
+            <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Modifier</a></li>
+            <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Supprimer</a></li></ul>
         </li>
 
-        <li>
-                <a href="#">images</a>
-                <ul>
-                        <li>
-
-                               <a href="#">photos</a>
-
-                                <ul>
-                                        <li><a href="#">catégorie 1</a></li>
-                                        <li><a href="#">catégorie 2</a></li>
-                                </ul>
-                        </li>
-                        <li>
-                                <a href="#">vidéos</a>
-                        </li>
-                </ul>
-        </li>
-                <li>
-                <a href="#">images</a>
-                <ul>
-                        <li>
-
-                               <a href="#">photos</a>
-
-                                <ul>
-                                        <li><a href="#">catégorie 1</a></li>
-                                        <li><a href="#">catégorie 2</a></li>
-                                </ul>
-                        </li>
-                        <li>
-                                <a href="#">vidéos</a>
-                        </li>
-                </ul>
+        <li><a href="#">Panier-Type</a>
+        <ul><li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Consulter</a></li>
+            <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Ajouter</a></li>
+            <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Modifier</a></li>
+            <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Supprimer</a></li></ul>
         </li>
 
-        <li>
-                <a href="#">images</a>
-                <ul>
-                        <li>
+        <li><a href="#">Abriculteurs</a>
+        <ul><li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Consulter</a></li>
+            <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Ajouter</a></li>
+            <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Modifier</a></li>
+            <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Supprimer</a></li></ul>
+        </li>
 
-                               <a href="#">photos</a>
+        <li><a href="#">Clients</a>
+        <ul><li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Consulter</a></li>
+            <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Ajouter</a></li>
+            <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Modifier</a></li>
+            <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Supprimer</a></li></ul>
+        </li>
 
-                                <ul>
-                                        <li><a href="#">catégorie 1</a></li>
-                                        <li><a href="#">catégorie 2</a></li>
-                                </ul>
-                        </li>
-                        <li>
-                                <a href="#">vidéos</a>
-                        </li>
-                </ul>
+        <li><a href="#">plus</a>
+                <ul><li><a href="#">forum</a></li>
+                    <li><a href="#">liens</a></li>
+                    <li><a href="#">nous contacter</a></li>
+                    <li><a href="#">team</a></li>
+                    <li><a href="#">recherche</a></li></ul>
         </li>
-        <li>
-               <a href="#">téléchargements</a>
-                <ul>
-                        <li><a href="#">vidéos</a></li>
-                        <li><a href="#">musiques</a></li>
-                </ul>
-        </li>
-       <li>
-                <a href="#">plus</a>
-                <ul>
-                        <li><a href="#">forum</a></li>
-                        <li><a href="#">liens</a></li>
-                        <li><a href="#">nous contacter</a></li>
-                        <li><a href="#">team</a></li>
-                        <li><a href="#">recherche</a></li>
-                </ul>
-        </li>
-        <li>
-            <a href="#">membres</a>
-            <ul>
-                <li><a href="#">connexion</a></li>
+        <li><a href="#">membres</a>
+            <ul><li><a href="#">connexion</a></li>
                 <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/NewAcount.py/NewAcount">inscription</a></li>
             </ul>
         </li>
@@ -118,49 +81,53 @@ def nav():
 </ul>
 </div>
 </nav>
-<br /><br /> <!--<br /><br /><br /><br /> -->
-
-
-<!--
-  <nav class="header container main">
-      <ul class="col-md-6">
-       <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/index.py/index">Accueil</a></li>
-        <li><a href="./PageClient.html">une AMAP : c'est quoi ?</a>
-          <ul>
-           <li><a href="http://www.eag-tournament.com">
-                 			    <i class="fa fa-soccer-ball-o fa-fw"></i>EAG</a>
-                 			</li>
-                 			<li><a href="index.html#contacter">
-                 				<i class="fa fa-phone fa-fw"></i>Nous Contacter</a>
-                 			</li>
-          </ul>
-        </li>
-        <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Produits</a></li>
-        <li><a href="./PageClient.html">Fruits</a></li>
-        <li><a href="#">Legumes</a></li>
-        <li><a href="#">Viandes</a></li>
-        <li><a href="#">Poissons</a></li>
-      </ul>
-      <div class= "login col-md-6">
-        <ul>
-          <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/NewAcount.py/NewAcount">Créer un compte</a></li>
-        <div class="col-md-6">
-           <form action="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/pythonamap.py/verifierCompte">
-            <input type="email" name="email" placeholder="toto@toto.fr" >
-            <input type="password" name="mdp" placeholder="Mot de passe">
-            <input type="submit" value="Se Connecter">
-            </form>
-        </div>
-        </ul>
-      </div>
-  </nav>
-
-  -->
-
+<br /><br /> <br /><br /><br /><br />
 
 
   '''
     return nav
+
+def nav():
+
+    # navigation pour simple visiteur mais client potentiel
+    nav = '''
+ <nav class="header container main">
+ <div class="row">
+  <ul id="menu" class="col-md-12 col-lg-12 ">
+
+        <li><a  href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/index.py/index">Accueil</a></li>
+
+        <li><a href="#">Produits</a>
+        <ul><li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Consulter</a></li></ul></li>
+
+        <li><a href="#">Panier-Type</a>
+        <ul><li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Consulter</a></li></ul></li>
+
+        <li><a href="#">Abriculteurs</a>
+        <ul><li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/produit.py/index">Consulter</a></li></ul></li>
+
+
+
+        <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/NewAcount.py/NewAcount">Inscription</a></li>
+        <li><a href="#">Connexion</a></li>
+
+        <li><a href="#">plus</a>
+                <ul><li><a href="#">forum</a></li>
+                    <li><a href="#">liens</a></li>
+                    <li><a href="#">nous contacter</a></li>
+                    <li><a href="#">recherche</a></li></ul>
+        </li>
+
+</ul>
+</div>
+</nav>
+<br /><br /> <br /><br /><br /><br />
+
+
+  '''
+    return nav
+
+
 
 
 def navClient():
