@@ -13,7 +13,7 @@ def creerCompte(civilite='', nom='', prenom='', telephone='', email='', adresse=
     return result
 
 
-def afficherCompte(civilite='', nom='', prenom='', email='', adresse='', mdp=''):
+def afficherCompte(civilite='', nom='', prenom='', telephone='', email='', adresse='', mdp=''):
     result = ''
     result += "les données envoyées sont:<br /> nom:" + nom
     result += " <br /> civilité:" + civilite
