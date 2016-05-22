@@ -14,7 +14,7 @@ def formulaire():
     formulaire = '''
 <div class="container form">
     <h2 class="col-md-12">Connexion</h2>
-    <form id="auth" name="connexion" method="post" action="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/pythonamap.py/creerCompte" enctype="multipart/form-data">
+    <form id="auth" >
 
       <div class="col-md-12">
         <label class="col-md-6">Adresse mail:</label>
@@ -33,5 +33,7 @@ def formulaire():
       <div class="col-md-12">
           <button type="submit">Envoyer</button>
       </div>
-  </div>'''
+
+      </form>
+</div>'''
     return formulaire

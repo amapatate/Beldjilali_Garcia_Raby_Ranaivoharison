@@ -99,7 +99,7 @@ INSERT INTO agriculteur (nom, prenom,telephone, email,mdp,presentation) VALUES
 ('Ate','Patrick','01231450000', 'pat@free.fr','patate','agriculteur spécialisé dans la Pat Ate');
 
 INSERT INTO agriculteur (nom, prenom,telephone, email,mdp,presentation) VALUES
-('admin','admin','0123456789', 'admin','admin','compte administrateur du site');
+('admin','admin','0123456789', 'admin@admin','admin','compte administrateur du site');
 
 
 
