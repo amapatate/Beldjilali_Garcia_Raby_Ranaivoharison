@@ -40,14 +40,7 @@ GENERAL
 .clearfix:after {clear: both;}
 .clearfix {zoom: 1; /* ie 6/7 */}
 
-.banniere
-{
-margin:0 px;
-border-width: 0 px;
-padding:0 px;
-width:100%;
-background-color: grey;
-}
+
 
 body
 {
@@ -214,10 +207,19 @@ h3{
   text-align: center;
 }
 
+
+header#amap{
+  margin:20px;
+  font-size: 2em;
+  text-align: center;
+  color: #44B78B;
+}
+
+
 /*
 ***
 ***
-New Acount
+new Account
 ***
 ***
 */
@@ -253,3 +255,55 @@ color:black;
 background-color:white;
 background-image:url(/IENAC15/beldjilali_garcia_raby_ranaivoharison/images/bg.jpg);
 }
+
+
+.banniere
+{
+margin:0 px;
+border-width: 0 px;
+padding:0 px;
+width:100%;
+background-color: grey;
+}
+
+footer
+{
+    width:100%;
+    padding:50px 0;
+    color: #666;
+    text-align: center;
+    height:5px;
+
+
+}
+
+
+
+
+/*
+footer {
+margin:0 px;
+border-width: 0 px;
+font-size: 5px;
+color:white;
+text-align: center;
+position:absolute;
+padding:30px;
+width: 100%;
+height:100px;
+background: url(/IENAC15/beldjilali_garcia_raby_ranaivoharison/images/footbg.jpg) no-repeat center center;
+}
+
+/*
+header {
+margin:0 px;
+border-width: 0 px;
+font-size: 5px;
+color:white;
+text-align: center;
+position:absolute;
+padding:30px;
+width: 100%;
+height:100px;
+background: url(/IENAC15/beldjilali_garcia_raby_ranaivoharison/images/banniere.jpg) no-repeat center center;
+}*/

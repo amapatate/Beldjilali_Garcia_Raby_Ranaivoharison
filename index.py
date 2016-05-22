@@ -5,6 +5,7 @@ def index():
     result = template.head()
     result += template.header()
     result += template.nav()
+    result += template.titre("Bienvenue sur le site de l'Amap'atate")
     result += presentation()
     result += template.footer()
     return result
@@ -14,17 +15,10 @@ def presentation():
     presentation = '''
 <div class="container">
 
-<div class="present row">
-    <div class="class="col-lg-offset-8 col-lg-10">
-        <h2><a href="#">
-        <img  id="logo" width="20%" src="/IENAC15/beldjilali_garcia_raby_ranaivoharison/images/logo.png" alt="logo" title="AMAP'ATATE" />
-        </a>
-        </h2>
-    </div>
-</div>
+
 
 <div class="present row">
-  <h2 id="amap">Bienvenue sur le site de l'Amap'atate</h2>
+
   <article  class="what col-md-12" >
   	 <div class=" col-md-6 col-xs-12">
         <a href="#"><h3>Comment ça marche ?</h3></a>
@@ -42,8 +36,89 @@ def presentation():
 </div>
 
 <br /><br /><br />
-
 <section>
+
+
+
+
+<h3>
+<p style="margin-bottom: 0cm; line-height: 100%">Vous êtes un
+consomm'Acteur en devenir&nbsp;? Adhérez&nbsp, c'est facile !</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/></h3>
+
+</p>
+<ol>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 100%">Vous
+	consulter la liste des agriculteurs, leur panier-type et le tarif de
+	l'abonnement.</p>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 100%">Vous vous
+	inscrivez sur le site.</p>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 100%">Vous imprimez
+	le contrat et le transmettez à l'agriculteur avec votre réglement
+	pour l'abonnement annuel. Vous pouvez faire un ou plusieurs chèques
+	pour un retrait progressif.
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 100%">Vous pouvez
+	vous abonner chez plusieurs agriculteurs.
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 100%">Chaque
+	semaine vous passer retirer votre panier aux lieu et heures indiqués
+	dans le contrat.</p>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 100%">Vous pouvez
+	contacter l'agriculteur pour échanger un produit de votre panier-
+	type. Si un autre amapien est intéressé, l'agriculteur pourra vous
+	donner satisfaction. Dans le cas contraire, vous conservez le panier
+	d'origine.</p>
+	<p style="margin-bottom: 0cm; line-height: 100%"></p>
+</ol>
+
+<h3>
+<p style="margin-bottom: 0cm; line-height: 100%">Vous êtes
+producteur&nbsp;non adhérent ?</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+</h3>
+</p>
+<ol>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 100%">Contacter un
+	autre agriculteur-adhérent</p>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 100%">Si votre
+	demande d'adhésion est acceptée, vous aurez un compte
+	administrateur et la possibilité de produire pour les amapiens de
+	l'amap'atate.</p>
+</ol>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<h3>
+<p style="margin-bottom: 0cm; line-height: 100%">Vous êtes
+producteur&nbsp;adhérent&nbsp;?</p>
+</h3>
+
+
+<ol>
+<li/>
+<p style="margin-bottom: 0cm; line-height: 100%">Vous vous
+	connectez avec votre compte producteur/agriculteur&nbsp;?</p>
+<li/>
+<p style="margin-bottom: 0cm; line-height: 100%">Vous
+	saisissez chaque semaine votre panier-type.</p>
+</ol>
+
+</section>
+<section>
+
+<h3>
+<p style="margin-bottom: 0cm; line-height: 100%">Les AMAP en bref</p>
+</h3>
+
 Une&nbsp;<strong>association
 pour le maintien d'une&nbsp;<a href="http://fr.wikipedia.org/wiki/Agriculture_paysanne" target="_blank">agriculture
 paysanne</a></strong>, ou&nbsp;<strong>AMAP*</strong>, est, en
@@ -139,7 +214,7 @@ le consomm’Acteur :</strong></p>
 <p><strong><em>L’Amap</em></strong>&nbsp;ne représente pas
 l’association des consomm’Acteurs, mais bien le partenariat, le
 lien, entre un paysan et un groupe de cosomm’Acteurs, — qu’il
-soit déclaré ou non en association à la préfecture.<br/>
+soit déclaré ou non en association à la préfecture.
 Ce lien
 est matérialisé par le&nbsp;<em>contrat d’engagement Amap</em>.</p>
 </section>

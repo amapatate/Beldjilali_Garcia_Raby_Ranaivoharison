@@ -1,11 +1,17 @@
 def head():
     head = '''
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml">
     <html xml:lang="fr">
 <head>
   <title>AMAP'ATATE</title>
   <meta charset="utf-8"/>
+
+
+  <link rel="stylesheet" type="text/css" href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/css/font-awesome.min.css" />
+  <script type="text/javascript" src="/IENAC15/beldjilali_garcia_raby_ranaivoharison/js/bootstrap-table.min.js"></script>
+  <script type="text/javascript" src="/IENAC15/beldjilali_garcia_raby_ranaivoharison/js/bootstrap-table.js"></script>
+  <link rel="stylesheet" type="text/css" href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/css/bootstrap-table.min.css"/>
   <link rel="icon" type="image/png" href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/images/logo.png" />
     <link rel="stylesheet" type="text/css" href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/css/menu.css">
     <link rel="stylesheet" type="text/css" href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/css/style.css">
@@ -13,24 +19,76 @@ def head():
     <script type="text/javascript" src="/IENAC15/beldjilali_garcia_raby_ranaivoharison/js/jquery-2.2.0.min.js"></script>
     <script type="text/javascript" src="/IENAC15/beldjilali_garcia_raby_ranaivoharison/js/menu.js"></script>
      <script type="text/javascript" src="/IENAC15/beldjilali_garcia_raby_ranaivoharison/js/event.js"></script>
+      <script type="text/javascript" src="/IENAC15/beldjilali_garcia_raby_ranaivoharison/js/bootstrap.min.js"></script>
 
+
+  <!--
+<link rel="stylesheet" type="text/css" href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/css/font-awesome.min.css" />
+                    <link rel="stylesheet" type="text/css" href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/css/bootstrap.min.css" />
+                    <link rel="stylesheet" type="text/css" href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/css/bootstrap-table.min.css" />
+                    <link rel="stylesheet" type="text/css" href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/css/style.css" />
+                    <link rel="stylesheet" type="text/css" href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/css/menu.css" />
+                    <link rel="stylesheet" type="text/css" href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/css/form.css" />
+                    <link rel="stylesheet" type="text/css" href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/css/button.css" />
+                    <script type="text/javascript" src= "/IENAC15/beldjilali_garcia_raby_ranaivoharison/js/jquery-2.2.0.min.js" ></script>
+		<script type="text/javascript" src= " /IENAC15/beldjilali_garcia_raby_ranaivoharison/js/ootstrap.min.js" ></script>
+		<script type="text/javascript" src= " /IENAC15/beldjilali_garcia_raby_ranaivoharison/js/bootstrap-table.min.js" ></script>
+-->
 </head>
 <body>'''
     return head
 
+def titre(intitule):
+    titre='''
+        <header id="amap">'''+intitule+'''</header>
+        '''
+    return titre
+
+
+def headerClient():
+    header = '''
+    <header class="container">
+    <section class="hero row">
+      <h1>Bonjour "nomClient"</h1>
+      <p></p>
+    </section>
+  </header>'''
+    return header
 
 
 def header():
     header = '''
-  <header class="row">
-  <div class="container>
+  <header class="container">
+  <div class="row">
      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <img   width="100%" src="/IENAC15/beldjilali_garcia_raby_ranaivoharison/images/banniere.jpg" alt="banniere" title="AMAP'ATATE" />
+        <img  width=100% src="/IENAC15/beldjilali_garcia_raby_ranaivoharison/images/banniere.png" alt="banniere" title="AMAP'ATATE" />
     </div>
  </div>
   </header>'''
     return header
 
+def footer():
+    footer='''
+    <footer class="container">
+  <div class="row">
+     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h3>&copy All potatoes reserved</h3>
+    </div>
+ </div>
+   </footer>
+     </body>
+        </html>
+        '''
+    return footer
+
+def footer():
+    footer='''
+            <footer> AMAP'ATATE : l'AMAP qui donne la patate !
+            </footer>
+        </body>
+        </html>
+        '''
+    return footer
 
 def navAdmin():
     # menu pour administrateur agriculteur
@@ -70,11 +128,10 @@ def navAdmin():
         </li>
 
         <li><a href="#">plus</a>
-                <ul><li><a href="#">forum</a></li>
-                    <li><a href="#">liens</a></li>
-                    <li><a href="#">nous contacter</a></li>
-                    <li><a href="#">recherche</a></li></ul>
-        </li>
+                <ul><li><a href="#">Contacter un agriculteur</a></li>
+                    <li><a href="http://www.enac.fr/">ENAC</a></li>
+                    <li><a href="#">Les dévoloppeurs</a></li></ul></li>
+
         <li><a href="#">membres</a>
             <ul><li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/connexion.py/connexion">connexion</a></li>
                 <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/newAccount.py/newAccount">inscription</a></li>
@@ -84,7 +141,7 @@ def navAdmin():
 </ul>
 </div>
 </nav>
-<br /><br /> <br /><br /><br /><br />
+<br /><br /> <br /><br /><br />
   '''
     return nav
 
@@ -111,16 +168,13 @@ def nav():
         <li><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/connexion.py/connexion">Connexion</a></li>
 
         <li><a href="#">plus</a>
-                <ul><li><a href="#">forum</a></li>
-                    <li><a href="#">liens</a></li>
-                    <li><a href="#">nous contacter</a></li>
-                    <li><a href="#">recherche</a></li></ul>
-        </li>
+                <ul><li><a href="#">Contacter un agriculteur</a></li>
+                    <li><a href="http://www.enac.fr/">ENAC</a></li>
+                    <li><a href="#">Les dévoloppeurs</a></li></ul></li>
 
-</ul>
 </div>
 </nav>
-<br /><br /> <br /><br /><br /><br />
+<br /><br /> <br /><br />
 
   '''
     return nav
@@ -146,27 +200,5 @@ def navClient():
     return nav
 
 
-def headerClient():
-    header = '''
-    <header class="container">
-    <section class="hero row">
-      <h1>Bonjour "nomClient"</h1>
-      <p></p>
-    </section>
-  </header>'''
-    return header
 
 
-def footer():
-    footer = '''
-  <footer class="clearfix container">
-    <div class="info row">
-      <ul>
-        <li class="col-md-3" > <a href="http://www.enac.fr/" target="_blank">Site de l'ENAC </a></li>
-        <li class="col-md-3" > <a href="#">Les développeurs </a> </li>
-      </ul>
-    </div>
-  </footer>
-</body>
-</html>'''
-    return footer
