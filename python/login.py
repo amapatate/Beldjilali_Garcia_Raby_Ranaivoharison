@@ -1,3 +1,7 @@
+# fichier pour mise en place des sessions
+# cf fin poly papier page 35
+# mais problème de login non reconnu
+
 import mysql.connector
 
 
@@ -30,20 +34,22 @@ def close_BD(cursor, cnx):
 cnx = connect_BD()
 cursor = cnx.cursor()
 
-def index(email,mdp):
-    resultat=0
+def index(login,pwd):
+    # resultat=0
     cnx = connect_BD()
     cursor = cnx.cursor()
     query = ("SELECT id,nom,prenom,telephone,email FROM client WHERE email=%s AND mdp=%s LIMIT 1")
-    param=(email,mdp)
+    param=(login,pwd)
     cursor.execute(query,param)  # envoi de la requete
     response = cursor.fetchone()
     if(response is None):
         return 0 # 0 si auth pas bonne
     else:
-        for (id,nom,prenom) in cursor:
+        for (id,nom,prenom,telephone,email) in cursor:
             Session()["nom"]=nom
             Session()["prenom"]=prenom
             Session()["id"]=id
+            Session()["telephone"]=telephone
+            Session()["email"]=email
         close_BD(cursor, cnx)
         return 1 # 1 si authentification ok

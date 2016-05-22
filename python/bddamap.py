@@ -62,40 +62,52 @@ def selectProduit():
 
 
 
-'''
-# dans login.py
-def selectLogin(email,mdp):
+def gestionLoginClient(login,pwd):
+    '''
+    :param login: vient de l'attribut du formulaire : c'est l'email
+    :param pwd: password
+    :return: KO si le user n'est pas reconnu
+             client si le user est un client
+             agriculteur si ...
+    '''
     cnx = connect_BD()
     cursor = cnx.cursor()
-    query = ("SELECT id,nom,prenom,telephone,email FROM client")
-    param=(email,mdp)
+    query = ("SELECT id,nom,prenom,telephone,email FROM `IENAC15_beldjilali_garcia_raby_ranaivoharison`.`client` WHERE email=%s AND mdp=%s LIMIT 1")
+    param=(login,pwd)
     cursor.execute(query,param)  # envoi de la requete
     response = cursor.fetchone()
     if(response is None):
-        return 0 # 0 si auth pas bonne
-    else:
-        for (id,nom,prenom) in cursor:
-            Session()["nom"]=nom
-            Session()["prenom"]=prenom
-            Session()["id"]=id
         close_BD(cursor, cnx)
-    return 1 # 1 si correcte
-
-
-
-# dans prive.py
-def index():
-    if "id" in Session() and Session()["id"] !='':
-        msg+="<br /><a href='../../python/prive.py.deconnect'>Se déconnecter</a>"
+        return "KO" # 0 si auth pas bonne
     else:
-        raise HTTP_REDIRECTION('../../index.html')
-    return msg
+        close_BD(cursor, cnx)
+        return "client" # 1 si authentification ok
 
-def deconnect():
-    if "id" in Session() and Session()["id"] !='':# si la session existe on la supprime
-        del Session()["nom"]
-        del Session()["prenom"]=prenom
-        del Session()["id"]=id
-    raise HTTP_REDIRECTION('../../index.html')
-    return
-'''
+
+
+def gestionLoginAgriculteur(login,pwd):
+    cnx = connect_BD()
+    cursor = cnx.cursor()
+    query = ("SELECT id,nom,prenom,telephone,email FROM `IENAC15_beldjilali_garcia_raby_ranaivoharison`.`agriculteur` WHERE email=%s AND mdp=%s LIMIT 1")
+    param=(login,pwd)
+    cursor.execute(query,param)  # envoi de la requete
+    response = cursor.fetchone()
+    if(response is None):
+        close_BD(cursor, cnx)
+        return "KO" # 0 si authentif pas bonne
+    else:
+        close_BD(cursor, cnx)
+        return "agriculteur"
+
+
+def gestionLogin(login,pwd):
+    rep =gestionLoginClient(login,pwd)
+    if rep == "client":
+        return rep
+    else:
+        rep =gestionLoginAgriculteur(login,pwd)
+        if rep=="agriculteur":
+            return rep
+        else:
+            return rep
+

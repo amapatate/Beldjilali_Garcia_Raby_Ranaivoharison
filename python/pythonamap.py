@@ -35,5 +35,4 @@ def saisirPanierType(select='', name='', surname='', email='', adresse=''):
     return result
 
 
-def verifierCompte(email='', mdp=''):
-    pass
+

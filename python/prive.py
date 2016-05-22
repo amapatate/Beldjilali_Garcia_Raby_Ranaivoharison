@@ -1,4 +1,6 @@
-
+# fichier pour mise en place des sessions
+# cf fin poly papier page 35
+# mais problème de login non reconnu
 
 def index():
     if "id" in Session() and Session()["id"] != '':
@@ -13,6 +15,8 @@ def deconnect():
         del Session()["nom"]
         del Session()["prenom"]
         del Session()["id"]
+        del Session()["telephone"]
+        del Session()["email"]
     raise HTTP_REDIRECTION('/IENAC15/beldjilali_garcia_raby_ranaivoharison/index.py/index')
     return
 
