@@ -1,5 +1,8 @@
 import mysql.connector
+
+
 print("Content-type:text/html\n\n")
+
 config = {
     'user': 'admin',
     'password': 'admin',
@@ -13,7 +16,7 @@ config = {
 def connect_BD():
     try:
         cnx = mysql.connector.connect(**config)
-      #  cnx.autocommit = False
+        cnx.autocommit = False
         print("connexion ok")
     except:
         print("Something is wrong with your user name or password")
@@ -27,8 +30,10 @@ def close_BD(cursor, cnx):
 cnx = connect_BD()
 cursor = cnx.cursor()
 
-def index(email='',mdp=''):
+def index(email,mdp):
     resultat=0
+    cnx = connect_BD()
+    cursor = cnx.cursor()
     query = ("SELECT id,nom,prenom,telephone,email FROM client WHERE email=%s AND mdp=%s LIMIT 1")
     param=(email,mdp)
     cursor.execute(query,param)  # envoi de la requete
@@ -41,4 +46,4 @@ def index(email='',mdp=''):
             Session()["prenom"]=prenom
             Session()["id"]=id
         close_BD(cursor, cnx)
-    return 1 # 1 si authentification ok
+        return 1 # 1 si authentification ok

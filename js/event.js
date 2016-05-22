@@ -1,4 +1,4 @@
-$(document).ready(function){
+$(document).ready(function(){
 	$("form#auth").on("submit",function(event){
 		// l'evt se déclenche lors de la soumission du formulaire
 		event.preventDefault();//arrete l'envoi standard du formulaire

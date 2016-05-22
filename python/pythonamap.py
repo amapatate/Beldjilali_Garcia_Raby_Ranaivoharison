@@ -31,7 +31,7 @@ def saisirPanierType(select='', name='', surname='', email='', adresse=''):
     result += afficherCompte(name, surname, email, adresse)
     result += template.footer()
     bdd.insertClient(name, surname, email, adresse)
-    # Session()["mail"]=email
+    # Session()["email"]=email
     return result
 
 

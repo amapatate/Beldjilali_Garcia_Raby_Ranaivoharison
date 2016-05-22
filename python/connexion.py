@@ -12,7 +12,7 @@ def connexion():
 
 def formulaire():
     formulaire = '''
-<div class="container form">
+<div class="container form" name="connexion" method="post" action="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/pythonamap.py/verifierCompte" enctype="multipart/form-data">
     <h2 class="col-md-12">Connexion</h2>
     <form id="auth" >
 
