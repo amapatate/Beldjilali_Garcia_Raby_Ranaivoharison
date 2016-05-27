@@ -1,8 +1,6 @@
 template = Import('/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/template.py')
 
 
-
-
 def index():
     result = template.head()
     result += template.nav()
@@ -10,6 +8,7 @@ def index():
     result += cv()
     result += template.footer()
     return result
+
 
 def cv():
     cv = '''
@@ -33,5 +32,3 @@ def cv():
 
     '''
     return cv
-
-

@@ -20,4 +20,3 @@ def deconnect():
         del Session()["email"]
     raise HTTP_REDIRECTION('/IENAC15/beldjilali_garcia_raby_ranaivoharison/index.py/index')
     return
-

@@ -6,7 +6,7 @@ def clients():
     """Fonction qui renvoie le html affichant les clients de l agriculteur name"""
     liste_clients = bdd.selectClientsAgri(Session()["id"])
     if len(liste_clients) == 0:
-        #Pas de client
+        # Pas de client
         clients = '''
     <section>
     <div class="container">
@@ -23,7 +23,7 @@ def clients():
             <p>T'as pas de client, tu pues</p>
         </div>
         '''
-    else :
+    else:
         clients = '''
 	<section>
     <div class="container">

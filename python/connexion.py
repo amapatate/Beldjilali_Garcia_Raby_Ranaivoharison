@@ -13,7 +13,7 @@ def connexion(mode):
 def formulaire(mode):
     """mode = 0 -> email/mdp incorrect
     mode = 1 -> formulaire de base"""
-    if mode == '1' :
+    if mode == '1':
         formulaire = '''
         
 <div class="container form">
@@ -41,7 +41,7 @@ def formulaire(mode):
       </form>
 </div>'''
     elif mode == '0':
-        formulaire ='''
+        formulaire = '''
 
 <div class="container form">
     <h2 class="col-md-12" style="color:#FF0000;">Votre Adresse mail ou votre mot de passe est incorrect</h2>      

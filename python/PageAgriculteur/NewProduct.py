@@ -57,7 +57,8 @@ def NewProduct():
     result += formulaire()
     result += template.footer()
     return result
-    
+
+
 def ajouterProduit(type='', nom='', variete='', description='', prix_kg=''):
     result = template.head()
     result += template.nav()
@@ -66,4 +67,3 @@ def ajouterProduit(type='', nom='', variete='', description='', prix_kg=''):
     result += template.footer()
     bdd.insertProduit(nom, type, variete, description, prix_kg, Session()["id"])
     return result
-

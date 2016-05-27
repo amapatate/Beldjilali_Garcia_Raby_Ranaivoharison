@@ -33,7 +33,6 @@ def close_BD(cursor, cnx):
     cnx.close()
 
 
-
 def index(login, pwd):
     cnx = connect_BD()
     cursor = cnx.cursor()
@@ -47,9 +46,9 @@ def index(login, pwd):
         cursor.execute(query, param)
         response = cursor.fetchone()
         if (response is None):
-            return  connexion.connexion('0') #Ni agriculteur, ni client
+            return connexion.connexion('0')  # Ni agriculteur, ni client
         else:
-            #On a un agriculteur
+            # On a un agriculteur
             Session()["nom"] = response[1]
             Session()["prenom"] = response[2]
             Session()["id"] = response[0]
@@ -59,7 +58,7 @@ def index(login, pwd):
             close_BD(cursor, cnx)
             return Index.index()
     else:
-        #On a un client
+        # On a un client
         Session()["nom"] = response[1]
         Session()["prenom"] = response[2]
         Session()["id"] = response[0]

@@ -1,6 +1,7 @@
 template = Import('/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/template.py')
 bdd = Import('/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/bddamap.py')
 
+
 def newAccount(mode):
     result = template.head()
     result += template.nav()

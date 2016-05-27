@@ -5,7 +5,7 @@ bdd = Import('/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/bddamap.py')
 def formulaire():
     """renvoie le code html d'une ligne du formulaire de création de panier"""
     tab_produit = bdd.selectProduitsAgriculteur(Session()["id"])
-    #tab_produit = bdd.selectProduit()
+    # tab_produit = bdd.selectProduit()
     formulaire = '''
     <form id="form2" name="newpanier" method="post" action="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/PageAgriculteur/CreatPanier.py/envoyerProduit_Panier" enctype="multipart/form-data">
         <input type="text" name="date" value="Entrer date de validité"/>
@@ -54,9 +54,9 @@ def formulaire():
 
             <select name="nom_produit">
                 <optgroup label="Produit">'''
-    for rows in tab_produit :
-        formulaire += '''<option value="'''+ str(rows[1]) +'''">'''+ str(rows[1]) +'''</option>'''
-    formulaire +='''
+    for rows in tab_produit:
+        formulaire += '''<option value="''' + str(rows[1]) + '''">''' + str(rows[1]) + '''</option>'''
+    formulaire += '''
                 </optgroup>
             </select>
             <input type="int" name="qte" value="Entrer quantité"/>
@@ -78,16 +78,17 @@ def formulaire():
                  <th data-field="variete" data-sortable="true">Supprimer du panier</th>
             </thead>
             <tbody>'''
-    panier_agri = bdd.selectPanierAgriculteur(Session()["id"]) #Pb si pas encore de panier
+    panier_agri = bdd.selectPanierAgriculteur(Session()["id"])  # Pb si pas encore de panier
 
     id_panier = panier_agri[0]
     produits_qte = bdd.selectProduitPanier(id_panier)
-    for i in range(len(produits_qte)) :
+    for i in range(len(produits_qte)):
         id_produit = bdd.getIdProduitFromNomProduit(produits_qte[i][0])[0]
-        formulaire+= '''<tr>'''
-        formulaire +='''<td>'''+str(produits_qte[i][0])+'''</td>'''
-        formulaire += '''<td>'''+str(produits_qte[i][1])+'''</td>'''
-        formulaire += '''<td><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/PageAgriculteur/CreatPanier.py/deleteProduitPanier?id_panier='''+str(id_panier)+''';id_produit='''+str(id_produit)+'''"> X </a></td>'''
+        formulaire += '''<tr>'''
+        formulaire += '''<td>''' + str(produits_qte[i][0]) + '''</td>'''
+        formulaire += '''<td>''' + str(produits_qte[i][1]) + '''</td>'''
+        formulaire += '''<td><a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/PageAgriculteur/CreatPanier.py/deleteProduitPanier?id_panier=''' + str(
+            id_panier) + ''';id_produit=''' + str(id_produit) + '''"> X </a></td>'''
         formulaire += '''</tr>'''
     formulaire += '''
             </tbody>
@@ -117,12 +118,13 @@ def envoyerProduit_Panier(qte='', date='', prix='0.0', nom_produit=''):
     return CreatPanier()
 
 
-
 def deleteProduitPanier(id_panier, id_produit):
     """Supprime le produit id_produit du panier id_panier"""
     cnx = bdd.connect_BD()
     cursor = cnx.cursor()
-    query = ("DELETE FROM `IENAC15_beldjilali_garcia_raby_ranaivoharison`.`detail_panier_type` WHERE (id_panier_type = '"+str(id_panier)+"') and (id_produit = '"+str(id_produit)+"')")
+    query = (
+    "DELETE FROM `IENAC15_beldjilali_garcia_raby_ranaivoharison`.`detail_panier_type` WHERE (id_panier_type = '" + str(
+        id_panier) + "') and (id_produit = '" + str(id_produit) + "')")
     cursor.execute(query)
     cnx.commit()
     bdd.close_BD(cursor, cnx)

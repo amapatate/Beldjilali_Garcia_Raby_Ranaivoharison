@@ -39,7 +39,7 @@ def Farmer():
         liste += '<td>' + str(row[0]) + '</td>'
         liste += '<td>' + str(row[1]) + '</td>'
         liste += '<td>' + str(row[2]) + '</td>'
-        liste += '<td><a href="mailto:' + str(row[3]) + ' ">'+ str(row[3])+ '</a></td>'
+        liste += '<td><a href="mailto:' + str(row[3]) + ' ">' + str(row[3]) + '</a></td>'
         liste += '<td>' + str(row[4]) + '</td>'
         liste += '<td>' + str(row[5]) + '</td>'
         liste += '<td>' + str(row[6]) + '</td>'

@@ -54,7 +54,7 @@ def listeProduit():
         liste += '<td>' + str(row[4]) + '</td>'
         liste += '<td>' + str(row[5]) + '</td>'
         liste += '<td>' + str(row[8]) + '</td>'
-        liste += '<td>' + str(row[6]) + ' '+str(row[7])+ '</td>'
+        liste += '<td>' + str(row[6]) + ' ' + str(row[7]) + '</td>'
         liste += '</tr>'
 
     liste += '''
@@ -66,5 +66,3 @@ def listeProduit():
     	</section>
     '''
     return liste
-
-
