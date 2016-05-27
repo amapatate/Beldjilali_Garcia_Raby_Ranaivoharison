@@ -261,6 +261,11 @@ Input et bouttons
 	-moz-appearance: none;
 	-moz-selection:1b4837;
 	}
+
+select option:checked,
+select option:hover {
+    box-shadow: 0 0 10px 100px #000 inset;
+}
 	
 /*
 ***

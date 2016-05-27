@@ -52,7 +52,7 @@ def formulaire(mode):
       <div class="col-md-12">
         <label class="col-md-6">Adresse mail:</label>
         <section class="col-md-6">
-          <input type="email" name="email" required/>
+          <input type="text" name="email" required/>
         </section>
       </div>
       <div class="col-md-12">

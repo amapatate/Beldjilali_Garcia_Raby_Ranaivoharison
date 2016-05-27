@@ -92,10 +92,10 @@ def footer():
   <footer class="clearfix container col-md-12">
     <div class="info">
       <ul>
-        <li class="col-md-6 col-xs-6"> <a href="http://www.enac.fr/" target="_blank">Site de l'ENAC </a></li>
-        <li class="col-md-6 col-xs-6"> <a href="#">Webmasters </a> </li>
+        <li class="col-md-6 col-xs-6"> <a href="http://chefpatate.fr/" target="_blank">Les recettes du Chef Patate </a></li>
+        <li class="col-md-6 col-xs-6"> <a href="/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/webmaster.py/index">Webmasters </a> </li>
       </ul>
-      <h3 class="col-md-12 col-xs-12">&copy All right reserved ENAC</h3>
+      <h3 class="col-md-12 col-xs-12">&copy All potatoes reserved Amap'atate</h3>
     </div>
   </footer>
 </body>
