@@ -1,17 +1,19 @@
-template=Import('/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/template.py')
+template = Import('/IENAC15/beldjilali_garcia_raby_ranaivoharison/python/template.py')
+
 
 def Mes():
-    Mes='''
+    Mes = '''
     <div class="col-md-12">
         <p> Créer un protocole d'envoie automatique d'Email</p>
     </div>'''
     return Mes
 
+
 def Messages():
-    result= template.head()
-    result+= template.navClient()
-    result+= template.headerClient()
-    result+= Mes()
-    result+= template.footer()
+    result = template.head()
+    result += template.nav()
+    result += template.header()
+    result += Mes()
+    result += template.footer()
 
     return result

@@ -11,6 +11,7 @@ CREATE TABLE `client` (
   `telephone` varchar(30),
   `mdp` varchar(20),
   `email` varchar(30),
+  `id_agriculteur` varchar(30),
   `adresse` text,
    PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -45,20 +46,11 @@ CREATE TABLE `produit` (
   `description` text,
   `prix_kg` DECIMAL(10,2),
   `photo` mediumblob,
+  `id_agriculteur` int,
   PRIMARY KEY (id)
 ) ENGINE=InnoDB CHARSET=utf8;
 
 
--- --------------------------------------------------------
-
-
-CREATE TABLE `produit_agriculteur` (
-  `id_agriculteur` int(11),
-  `id_produit` int(11),
-  `qte_dispo` DECIMAL(10,2), 
-  FOREIGN KEY (id_produit) REFERENCES produit(id),
-  FOREIGN KEY (id_agriculteur) REFERENCES agriculteur(id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 -- --------------------------------------------------------
 
 
@@ -87,10 +79,10 @@ CREATE TABLE `detail_panier_type` (
 
 -- --------------------------------------------------------
 
-INSERT INTO produit (nom,type) VALUES 
-('pomme de terre','legume'),('chou','legume'),('navet','legume'), ('oignon','legume'),
-('pomme','fruit'), ('poire','fruit'), ('fraise','fruit'),
-('riz','feculent'), ('blé','feculent'), ('haricot sec','feculent');
+INSERT INTO produit (nom,type, id_agriculteur) VALUES 
+('pomme de terre','legume', 1),('chou','legume', 1),('navet','legume', 1), ('oignon','legume', 2),
+('pomme','fruit', 1), ('poire','fruit', 2), ('fraise','fruit', 2),
+('riz','feculent', 2), ('blé','feculent', 2), ('haricot sec','feculent', 1);
 
 INSERT INTO client (telephone, nom, prenom,email,mdp) VALUES 
 ('01231456789','Nerve','Germaine','nerve@free.fr','patate');
@@ -101,7 +93,8 @@ INSERT INTO agriculteur (nom, prenom,telephone, email,mdp,presentation) VALUES
 INSERT INTO agriculteur (nom, prenom,telephone, email,mdp,presentation) VALUES
 ('admin','admin','0123456789', 'admin','admin','compte administrateur du site');
 
-
+INSERT INTO panier_type (id_agriculteur, prix_abo_mensuel) VALUES
+(1, 0.00),(2, 0.00);
 
 
 

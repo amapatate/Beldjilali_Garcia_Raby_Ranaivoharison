@@ -23,7 +23,7 @@ def intro():
     return intro
 
 
-def IndexClient():
+def index():
     result = template.head()
     result += template.nav()
     result += template.header()
